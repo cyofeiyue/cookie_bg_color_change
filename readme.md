@@ -1,4 +1,4 @@
-#Using the cookies,Change Bg-Color in different pages
+# Using the cookies,Change Bg-Color in different pages
 
 + demo1.html
 > demo1.html change the background-color andstore the color into cookies
