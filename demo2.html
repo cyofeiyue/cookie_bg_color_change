@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="libs/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+</head>
+<body>
+    <div>
+        demo2
+    </div>
+    <script>
+        $(function () {
+            var color = Cookies.get("cookie_color");
+            $("body").css({"background":color});
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div>
+        <input type="button" value='rgba(255,0,0,0.5)'>
+        <input type="button" value='rgba(0,0,255,0.5)'>
+        <input type="button" value='rgba(0,255,0,0.5)'>
+        <input type="button" value='获取颜色值并设置背景颜色'>
+        <a href="demo2.html">demo2</a>
+    </div>
+</body>
+<script src="libs/jquery-3.2.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<script>
+    $(function () {
+        var bgColor = 0;
+        $('input').eq(0).click(function(){
+            bgColor = $(this).val();
+        });
+        $('input').eq(1).click(function(){
+            bgColor = $(this).val();
+        });
+        $('input').eq(2).click(function(){
+            bgColor = $(this).val();
+        });
+        
+        $('input').eq(3).click(function () {
+            Cookies.set("cookie_color",bgColor);
+            $("body").css("background",bgColor);
+        })
+    })
+</script>
+</html>
